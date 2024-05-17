@@ -12,7 +12,7 @@ h1 {
 }
 
 table.git-commands {
-    width: 80%;
+    width: 100%;
     margin: 20px auto;
     border-collapse: collapse;
     background-color: #fff;
@@ -21,7 +21,7 @@ table.git-commands {
 
 table.git-commands th, table.git-commands td {
     border: 1px solid #ddd;
-    padding: 12px;
+    padding: 8px;
     text-align: left;
 }
 
@@ -40,9 +40,59 @@ table.git-commands tr:hover {
 
 table.git-commands td:first-child {
     text-align: center;
-    width: 50px;
+    width: 30px;
 }
 
 table.git-commands th:first-child {
-    width: 50px;
+    width: 30px;
+}
+
+/* Media query for screens with a maximum width of 355px */
+@media (max-width: 355px) {
+    body {
+        padding: 10px;
+    }
+
+    table.git-commands, table.git-commands th, table.git-commands td {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    table.git-commands th, table.git-commands td {
+        display: block;
+        width: 100%;
+    }
+
+    table.git-commands th {
+        background-color: #0c0232;
+        color: white;
+        text-align: center;
+    }
+
+    table.git-commands td {
+        border: none;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    table.git-commands td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 10px;
+        font-weight: bold;
+        white-space: nowrap;
+        text-align: left;
+    }
+
+    table.git-commands tr {
+        display: block;
+        margin-bottom: 10px;
+    }
 }
