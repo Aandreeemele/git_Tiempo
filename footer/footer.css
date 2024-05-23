@@ -1,6 +1,6 @@
-/* Estilos por defecto */
+
 .fo {
-    width: 83rem;
+    width: 72rem;
     height: 2rem;
     border: 1px solid black;
     background-color: #0c0232;
@@ -19,22 +19,23 @@
     align-items: end;
 }
 
-/* Estilos para pantallas de hasta 375px de ancho */
+
 @media (max-width: 375px) {
     .fo {
-        width: 100%; /* Ajusta el ancho al 100% del contenedor */
-        height: auto; /* Permite que la altura se ajuste automáticamente */
-        font-size: 1rem; /* Ajusta el tamaño de fuente según sea necesario */
-        padding: 0.5rem; /* Agrega relleno para mejorar la apariencia */
+        width: 100%; 
+        height: auto; 
+        font-size: 1rem; 
+        padding: 0.5rem; 
+        box-sizing: border-box;
     }
 
     .p1, .p2 {
-        flex-direction: column; /* Cambia la dirección del flex a columna */
-        align-items: center; /* Centra los elementos horizontalmente */
-        text-align: center; /* Centra el texto */
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
     }
 
     .p2 {
-        justify-content: center; /* Centra los elementos verticalmente */
+        justify-content: center; 
     }
 }
