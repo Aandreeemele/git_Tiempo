@@ -1,8 +1,7 @@
-let santiago = document.querySelector(".header_emilio");
+let ale = document.querySelector(".header");
 
-santiago.innerHTML= `
-<header class="principal">
-    <p class="tit">Colaborador Santiago</p>
-</header>
+ale.innerHTML= `
+<h1 class="tit">Comandos <span>GIT</span> </h1>
+<a href="" class="btn-git">github</a>
 
 `;
