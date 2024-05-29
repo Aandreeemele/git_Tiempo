@@ -1,8 +1,8 @@
-let Santiago = document.querySelector(".header");
+let santiago = document.querySelector(".header_emilio");
 
-Santiago.innerHTML=`
-<header class="santi">
-<p class="p5">Santa Catalina Loboure,  editor Jose Calderón</p>
-
+santiago.innerHTML= `
+<header class="principal">
+    <p class="tit">Colaborador Santiago</p>
 </header>
+
 `;
